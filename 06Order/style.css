@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.flex-container{
+   
+    display: flex;
+   
+    background-color: #f4f4f4;
+     /* Justify Content is always on the main axis 
+    /* justify-content: end; */
+    /* Align item on the cross axis  */
+   /* align-items: start ; */
+
+   /* flex-wrap: wrap; */
+  /* so that helps with responsive ness */
+  /* https://youtu.be/3YW65K6LcIA?t=1026 */
+
+
+}
+
+.item{
+    width: 100px;
+    height: 100px;
+    background: #254de4 ;
+    margin: 10px;
+    color: white;
+    float: left;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+/* Align Self https://youtu.be/3YW65K6LcIA?t=722*/
+
+
+
+/* https://youtu.be/3YW65K6LcIA?t=777 */
+/* When it is column the main axis is verticle and cross axis is horizontal */
+
+.item:nth-of-type(1){
+    order: 3;
+}
+.item:nth-of-type(2){
+   order: 1;
+}
+.item:nth-of-type(3){
+    order: 3;
+}
